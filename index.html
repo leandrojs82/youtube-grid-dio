@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Página inicial do YouTube reproduzida em HTML e CSS Grid, baseada no Desafio Grid da DIO.">
+  <title>YouTube — Desafio Grid DIO</title>
+  <link rel="icon" href="assets/youtube.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para os vídeos</a>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand-group">
+        <button class="icon-button" type="button" aria-label="Menu">
+          <img src="assets/icons/menu.svg" width="24" height="24" alt="">
+        </button>
+        <a href="./index.html" aria-label="YouTube — Página inicial">
+          <img class="youtube-logo" src="assets/youtube.png" width="90" height="20" alt="YouTube">
+        </a>
+      </div>
+      <form class="search" action="https://www.youtube.com/results" method="get" role="search">
+        <input type="search" name="search_query" aria-label="Pesquisar no YouTube" autocomplete="off">
+        <button type="submit" aria-label="Pesquisar">
+          <img src="assets/search-svg.svg" width="24" height="24" alt="">
+        </button>
+      </form>
+      <div class="account-group">
+        <a class="icon-button" href="https://www.youtube.com/upload" aria-label="Criar vídeo">
+          <img src="assets/video.svg" width="24" height="24" alt="">
+        </a>
+        <button class="icon-button" type="button" aria-label="Notificações">
+          <img src="assets/bell.svg" width="24" height="24" alt="">
+        </button>
+        <img class="profile" src="assets/Avatar.svg" width="34" height="34" alt="Foto de perfil">
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <nav aria-label="Menu principal">
+        <a class="nav-item" href="./index.html" aria-label="Início" aria-current="page">
+          <img src="assets/icons/home.svg" width="24" height="24" alt="">
+          <span>Início</span>
+        </a>
+        <a class="nav-item" href="https://www.youtube.com/feed/explore" aria-label="Explorar">
+          <img src="assets/icons/explore.svg" width="24" height="24" alt="">
+          <span>Explorar</span>
+        </a>
+        <a class="nav-item" href="https://www.youtube.com/feed/subscriptions" aria-label="Inscrições">
+          <img src="assets/icons/subscriptions.svg" width="24" height="24" alt="">
+          <span>Inscrições</span>
+        </a>
+        <a class="nav-item" href="https://music.youtube.com/" aria-label="YouTube Music">
+          <img src="assets/icons/music.svg" width="24" height="24" alt="">
+          <span>YouTube Music</span>
+        </a>
+        <a class="nav-item" href="https://www.youtube.com/playlist?list=LL" aria-label="Vídeos que gostei">
+          <img src="assets/icons/like.svg" width="24" height="24" alt="">
+          <span>Vídeos que gostei</span>
+        </a>
+        <a class="nav-item" href="https://www.youtube.com/playlist?list=WL" aria-label="Assistir mais tarde">
+          <img src="assets/icons/clock.svg" width="24" height="24" alt="">
+          <span>Assistir mais tarde</span>
+        </a>
+        <a class="nav-item" href="https://www.youtube.com/feed/downloads" aria-label="Downloads">
+          <img src="assets/icons/download.svg" width="24" height="24" alt="">
+          <span>Downloads</span>
+        </a>
+        <a class="nav-item" href="https://www.youtube.com/feed/storefront" aria-label="Filmes">
+          <img src="assets/icons/film.svg" width="24" height="24" alt="">
+          <span>Filmes</span>
+        </a>
+        <a class="nav-item" href="https://www.youtube.com/learning" aria-label="Aprender">
+          <img src="assets/icons/learn.svg" width="24" height="24" alt="">
+          <span>Aprender</span>
+        </a>
+        <a class="nav-item" href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw" aria-label="Esportes">
+          <img src="assets/icons/award.svg" width="24" height="24" alt="">
+          <span>Esportes</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="content" id="conteudo" aria-label="Vídeos recomendados">
+      <div class="video-grid">
+        <article class="video-card">
+          <a class="video-link" href="https://www.youtube.com/results?search_query=Gera%C3%A7%C3%A3o%20Tech%20Unimed%20-%20BH%20-%20Ci%C3%AAncia%20de%20Dados%20DIO">
+            <img class="thumbnail" src="assets/thumbnail-01.png" width="250" height="141" alt="">
+            <div class="video-info">
+              <img class="channel-avatar" src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO">
+              <div>
+                <h2 class="video-title">Geração Tech Unimed - BH - Ciência de Dados</h2>
+                <p class="video-meta">2,1 mil visualizações<br>Transmitido há 2 dias</p>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="video-card">
+          <a class="video-link" href="https://www.youtube.com/results?search_query=Scrum%20Talks%20DIO">
+            <img class="thumbnail" src="assets/thumbnail-02.png" width="250" height="141" alt="">
+            <div class="video-info">
+              <img class="channel-avatar" src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO">
+              <div>
+                <h2 class="video-title">Scrum Talks</h2>
+                <p class="video-meta">1,6 mil visualizações<br>Transmitido há 3 dias</p>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="video-card">
+          <a class="video-link" href="https://www.youtube.com/results?search_query=Machine%20Learning%20Avan%C3%A7ado%20-%20Fast%20Track%20DIO">
+            <img class="thumbnail" src="assets/thumbnail-03.png" width="250" height="141" alt="">
+            <div class="video-info">
+              <img class="channel-avatar" src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO">
+              <div>
+                <h2 class="video-title">Machine Learning Avançado - Fast Track</h2>
+                <p class="video-meta">1,7 mil visualizações<br>Transmitido há 4 dias</p>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="video-card">
+          <a class="video-link" href="https://www.youtube.com/results?search_query=Global%20Skills%20%232%20-%20Project%20Planning%20DIO">
+            <img class="thumbnail" src="assets/thumbnail-04.png" width="250" height="141" alt="">
+            <div class="video-info">
+              <img class="channel-avatar" src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO">
+              <div>
+                <h2 class="video-title">Global Skills #2 - Project Planning</h2>
+                <p class="video-meta">2,1 mil visualizações<br>Transmitido há 2 dias</p>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="video-card">
+          <a class="video-link" href="https://www.youtube.com/results?search_query=Como%20aprender%20a%20programar%20Python%20do%20ZERO%20DIO">
+            <img class="thumbnail" src="assets/thumbnail-05.png" width="250" height="141" alt="" loading="lazy">
+            <div class="video-info">
+              <img class="channel-avatar" src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO" loading="lazy">
+              <div>
+                <h2 class="video-title">Como aprender a programar Python do ZERO</h2>
+                <p class="video-meta">711 visualizações<br>Transmitido há 2 dias</p>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="video-card">
+          <a class="video-link" href="https://www.youtube.com/results?search_query=Gera%C3%A7%C3%A3o%20Tech%20Unimed%20-%20BH%20-%20Ci%C3%AAncia%20de%20Dados%20DIO">
+            <img class="thumbnail" src="assets/thumbnail-01.png" width="250" height="141" alt="" loading="lazy">
+            <div class="video-info">
+              <img class="channel-avatar" src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO" loading="lazy">
+              <div>
+                <h2 class="video-title">Geração Tech Unimed - BH - Ciência de Dados</h2>
+                <p class="video-meta">2,1 mil visualizações<br>Transmitido há 2 dias</p>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="video-card">
+          <a class="video-link" href="https://www.youtube.com/results?search_query=Scrum%20Talks%20DIO">
+            <img class="thumbnail" src="assets/thumbnail-02.png" width="250" height="141" alt="" loading="lazy">
+            <div class="video-info">
+              <img class="channel-avatar" src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO" loading="lazy">
+              <div>
+                <h2 class="video-title">Scrum Talks</h2>
+                <p class="video-meta">1,6 mil visualizações<br>Transmitido há 3 dias</p>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="video-card">
+          <a class="video-link" href="https://www.youtube.com/results?search_query=Machine%20Learning%20Avan%C3%A7ado%20-%20Fast%20Track%20DIO">
+            <img class="thumbnail" src="assets/thumbnail-03.png" width="250" height="141" alt="" loading="lazy">
+            <div class="video-info">
+              <img class="channel-avatar" src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO" loading="lazy">
+              <div>
+                <h2 class="video-title">Machine Learning Avançado - Fast Track</h2>
+                <p class="video-meta">1,7 mil visualizações<br>Transmitido há 4 dias</p>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="video-card">
+          <a class="video-link" href="https://www.youtube.com/results?search_query=Scrum%20Talks%20DIO">
+            <img class="thumbnail" src="assets/thumbnail-02.png" width="250" height="141" alt="" loading="lazy">
+            <div class="video-info">
+              <img class="channel-avatar" src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO" loading="lazy">
+              <div>
+                <h2 class="video-title">Scrum Talks</h2>
+                <p class="video-meta">1,6 mil visualizações<br>Transmitido há 3 dias</p>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="video-card">
+          <a class="video-link" href="https://www.youtube.com/results?search_query=Machine%20Learning%20Avan%C3%A7ado%20-%20Fast%20Track%20DIO">
+            <img class="thumbnail" src="assets/thumbnail-03.png" width="250" height="141" alt="" loading="lazy">
+            <div class="video-info">
+              <img class="channel-avatar" src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO" loading="lazy">
+              <div>
+                <h2 class="video-title">Machine Learning Avançado - Fast Track</h2>
+                <p class="video-meta">1,7 mil visualizações<br>Transmitido há 4 dias</p>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="video-card">
+          <a class="video-link" href="https://www.youtube.com/results?search_query=Global%20Skills%20%232%20-%20Project%20Planning%20DIO">
+            <img class="thumbnail" src="assets/thumbnail-04.png" width="250" height="141" alt="" loading="lazy">
+            <div class="video-info">
+              <img class="channel-avatar" src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO" loading="lazy">
+              <div>
+                <h2 class="video-title">Global Skills #2 - Project Planning</h2>
+                <p class="video-meta">2,1 mil visualizações<br>Transmitido há 2 dias</p>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="video-card">
+          <a class="video-link" href="https://www.youtube.com/results?search_query=Como%20aprender%20a%20programar%20Python%20do%20ZERO%20DIO">
+            <img class="thumbnail" src="assets/thumbnail-05.png" width="250" height="141" alt="" loading="lazy">
+            <div class="video-info">
+              <img class="channel-avatar" src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO" loading="lazy">
+              <div>
+                <h2 class="video-title">Como aprender a programar Python do ZERO</h2>
+                <p class="video-meta">711 visualizações<br>Transmitido há 2 dias</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
